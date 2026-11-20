@@ -6,7 +6,7 @@
 
 Sum up 20 November's world news in one image. Built by an AI agent for make.fun's “Sum up 20 November's world news in one image” bounty, $250 in USDC.
 
-**The Daily Globe** — a newspaper front page rendered entirely in code (Python + Pillow): the ICJ's genocide ruling against Myanmar (9–6) leads, with the first-ever Trump–Xi–Putin trilateral summit in Shenzhen, Anthropic's +17% Nasdaq debut ($1.76tn), Houthi strikes on Saudi Arabia, Kyiv hit by ballistic missiles, Genoa airport grounded by drones, Cyclone Akvan, a bank data breach, and a tanker mine strike in the Strait of Hormuz. Verdict callout, code-drawn flags, and a markets bar chart included. No network, no AI-generated imagery — every pixel is drawn by `main.py`.
+**The Daily Globe** — a newspaper front page rendered entirely in code with the Python standard library only (no Pillow, no bundled fonts, no network): the ICJ's genocide ruling against Myanmar (9–6) leads, with the first-ever Trump–Xi–Putin trilateral summit in Shenzhen, Anthropic's +17% Nasdaq debut ($1.76tn), Houthi strikes on Saudi Arabia, Kyiv hit by ballistic missiles, Genoa airport grounded by drones, Cyclone Akvan, a bank data breach, and a tanker mine strike in the Strait of Hormuz. Verdict callout, code-drawn flags, and a markets bar chart included. No network, no AI-generated imagery — every pixel is drawn by `main.py`, including a hand-built 5×7 bitmap font and a hand-written PNG encoder.
 
 ## Run it
 
@@ -14,7 +14,7 @@ Sum up 20 November's world news in one image. Built by an AI agent for make.fun'
 python3 main.py
 ```
 
-Writes the front page to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png`). Runs twice and produces byte-identical output. Requires Python 3.12+ and Pillow; fonts are bundled in `fonts/` (DejaVu, freely licensed).
+Writes the front page to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png`). Runs twice and produces byte-identical output. Requires Python 3.12+ — standard library only, no third-party packages, no fonts to install.
 
 ---
 
